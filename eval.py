@@ -40,8 +40,8 @@ def main(args):
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument("--dataset", default="voc")
-    parser.add_argument("--data-dir", default="E:/PyTorch/data/voc2012")
-    parser.add_argument("--ckpt-path", default="E:/PyTorch/scripts/ckpts/maskrcnn_voc-5.pth")
+    parser.add_argument("--data-dir", default="/contents/data/voc2012")
+    parser.add_argument("--ckpt-path", default="/contents/maskrcnn_voc-50.pth")
     parser.add_argument("--iters", type=int, default=3) # number of iterations, minus means the entire dataset
     args = parser.parse_args([]) # [] is needed if you're using Jupyter Notebook.
     
